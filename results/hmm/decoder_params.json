@@ -1,0 +1,20 @@
+{
+  "selected": "untuned",
+  "decoders": {
+    "tuned": {
+      "alpha": 1.0,
+      "beta_m": 10.0,
+      "backtrack_tolerance_m": 15.0,
+      "min_log_prob": -30.0,
+      "gap_break_s": 600.0
+    },
+    "untuned": {
+      "alpha": 1.0,
+      "beta_m": 5.0,
+      "backtrack_tolerance_m": 15.0,
+      "min_log_prob": -30.0,
+      "gap_break_s": 600.0
+    }
+  },
+  "distance_hmm_beta": 40.0
+}
