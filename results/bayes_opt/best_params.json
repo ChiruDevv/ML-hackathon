@@ -1,0 +1,20 @@
+{
+  "best_params": {
+    "n_estimators": 450,
+    "max_depth": 7,
+    "learning_rate": 0.011878543639569463,
+    "min_child_weight": 2.3560158717700594,
+    "subsample": 0.6241493051249911,
+    "colsample_bytree": 0.9587697274636394,
+    "gamma": 3.0941498476677216,
+    "reg_lambda": 0.0035561396740379485,
+    "reg_alpha": 0.6421306336923588
+  },
+  "best_cv_top1": 0.8985017339690126,
+  "n_trials": 30,
+  "n_pruned": 4,
+  "search_seconds": 1325.7353274679997,
+  "objective": "mean 5-fold trip-grouped CV observation Top-1 accuracy",
+  "sampler": "TPE (seed=42, 8 random start-up trials)",
+  "pruner": "MedianPruner"
+}
