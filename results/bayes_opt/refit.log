@@ -1,0 +1,14 @@
+                                                                         0                                                  1
+model                                                    XGBoost (untuned)                                    XGBoost (tuned)
+params                   {"n_estimators": 300, "max_depth": 6, "learnin...  {"n_estimators": 450, "max_depth": 7, "learnin...
+cv_top1                                                           0.895224                                           0.898502
+cv_macro_f1                                                       0.943175                                           0.945071
+cv_macro_f1_std                                                    0.01576                                           0.014237
+cv_log_loss                                                       0.066889                                           0.064477
+test_top1                                                         0.914956                                           0.903986
+test_macro_f1                                                     0.951923                                           0.945678
+test_log_loss                                                     0.058909                                           0.061276
+test_route_continuity                                             0.959272                                           0.957938
+train_seconds                                                     5.528313                                          10.861736
+inference_ms_per_1k_obs                                          11.421593                                          26.681956
+saved bundle and OOF predictions
