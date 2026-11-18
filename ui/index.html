@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PathSnap - Team 10 Evaluator Console</title>
+  <link rel="stylesheet" href="vendor/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside id="panel">
+    <header>
+      <h1>PathSnap</h1>
+      <p class="sub">Map-matching &amp; route reconstruction &middot; Team 10</p>
+    </header>
+
+    <section class="card">
+      <label for="apiUrl">API server (Laptop 1)</label>
+      <div class="row">
+        <input id="apiUrl" type="text" spellcheck="false" placeholder="http://192.168.x.x:8000">
+        <button id="connectBtn">Connect</button>
+      </div>
+      <div id="status" class="status idle">Not connected</div>
+    </section>
+
+    <section class="card">
+      <h2>Evaluation trips</h2>
+      <div id="tripList" class="trips"><p class="muted">Connect to load trips.</p></div>
+    </section>
+
+    <section class="card" id="resultCard" hidden>
+      <h2>Result &middot; trip <span id="resTrip"></span></h2>
+      <table id="metrics"></table>
+      <p class="muted small" id="resModel"></p>
+    </section>
+
+    <section class="card">
+      <h2>Request log</h2>
+      <ol id="reqLog" class="log"></ol>
+    </section>
+  </aside>
+
+  <main>
+    <div id="map"></div>
+    <div id="legend">
+      <div><span class="sw gps"></span>Raw GPS fixes</div>
+      <div><span class="sw snap"></span>Matched position on road</div>
+      <div><span class="sw route"></span>Predicted route</div>
+    </div>
+    <div id="busy" hidden><div class="spinner"></div><span id="busyText">Running pipeline...</span></div>
+  </main>
+
+  <script src="vendor/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

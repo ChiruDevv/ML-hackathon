@@ -1,0 +1,3 @@
+partition,trips,obs_total,obs_median,obs_min,obs_max,nan_values,dt_share_1s,max_gap_s,trips_with_gap_gt60s,length_km_median,nodes_median,arcs_median,isolated_nodes_total,weak_components_median,largest_scc_share_median
+student_test,10,19160,1420.0,262,3958,0,0.9819896936551981,210.0,1,20.935617102115245,6596.5,13145.0,0,11.0,0.9609677685847287
+train,80,208417,1529.0,361,19313,0,0.9383341170217598,153064.0,22,24.065719471039895,9608.0,19526.5,0,20.0,0.9641911601989523
