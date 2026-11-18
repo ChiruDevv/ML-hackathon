@@ -1,0 +1,74 @@
+{
+  "model_file": "xgb_untuned.json",
+  "model_name": "XGBoost (untuned baseline) + HMM",
+  "params": {
+    "n_estimators": 300,
+    "max_depth": 6,
+    "learning_rate": 0.1,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8
+  },
+  "untuned_model_file": "xgb_untuned.json",
+  "untuned_params": {
+    "n_estimators": 300,
+    "max_depth": 6,
+    "learning_rate": 0.1,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8
+  },
+  "feature_names": [
+    "dist",
+    "dist_rank",
+    "dist_minus_min",
+    "dist_ratio",
+    "gauss_post",
+    "cos_heading",
+    "abs_heading_diff",
+    "cos_heading_long",
+    "heading_disp",
+    "speed",
+    "turn_rate",
+    "dt_prev",
+    "dt_next",
+    "t_proj",
+    "at_endpoint",
+    "log_arc_len",
+    "deg_from",
+    "deg_to",
+    "has_reverse",
+    "n_cands",
+    "win_dist_mean",
+    "win_dist_max",
+    "win_rank",
+    "win_minus_min"
+  ],
+  "candidates": {
+    "radius_m": 100.0,
+    "k": 10,
+    "index_sample_step_m": 10.0
+  },
+  "hmm": {
+    "alpha": 1.0,
+    "beta_m": 5.0,
+    "backtrack_tolerance_m": 15.0,
+    "min_log_prob": -30.0,
+    "gap_break_s": 600.0
+  },
+  "labels": {
+    "reliable_max_dist_m": 100.0
+  },
+  "trained_on": "80 training trips (every 3rd fix)",
+  "seed": 42,
+  "selected_configuration": "untuned",
+  "tuned_params": {
+    "n_estimators": 450,
+    "max_depth": 7,
+    "learning_rate": 0.011878543639569463,
+    "min_child_weight": 2.3560158717700594,
+    "subsample": 0.6241493051249911,
+    "colsample_bytree": 0.9587697274636394,
+    "gamma": 3.0941498476677216,
+    "reg_lambda": 0.0035561396740379485,
+    "reg_alpha": 0.6421306336923588
+  }
+}
